@@ -1,0 +1,20 @@
+ul li:hover {
+  background-color: #fa801c;
+}
+ul a:hover {
+  background-color: #fa801c;
+}
+
+div.img_link {
+  width: 10vh;
+  height: 10vh;
+  cursor: pointer;
+}
+
+.dropdown-item-color {
+  background-color: #f6f6e9;
+}
+
+.dropdown-item-color:hover {
+  background-color: #fefedd;
+}/*# sourceMappingURL=style.css.map */

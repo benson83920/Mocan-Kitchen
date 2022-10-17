@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%- include ("partials/header") %>
+		<title>Login</title>
+	</head>
+	<body>
+		<%- include ("partials/nav") %>
+
+		<!-- content -->
+		<h1 style="margin-top: 1rem">Hi！ <%= user.name %></h1>
+		<div class="container">
+			<div class="row text-center">
+				<h1>Recommend for you</h1>
+			</div>
+			<div class="row justify-content-around">
+				<div class="col-sm-4">
+					<div class="card">
+						<img
+							src="/img/126693.jpg"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">Oreo起司布丁</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img
+							src="/img/126691.webp"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">Oreo酪梨布丁</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card">
+						<img
+							src="/img/126695.jpg"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">芋泥布丁蛋糕</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mt-2">
+					<div class="card">
+						<img
+							src="/img/126684.jpg"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">炸雞馬鈴薯脆絲炒麵</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mt-2">
+					<div class="card">
+						<img
+							src="/img/126699.webp"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">馬鈴薯脆絲</h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 mt-2">
+					<div class="card">
+						<img
+							src="/img/126700.webp"
+							style="height: 70vh; object-fit: cover"
+							class="card-img-top"
+							alt="img"
+						/>
+						<div class="card-body">
+							<h5 class="card-title text-center">炸天貝</h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- footer -->
+		<%- include ("partials/footer")%>
+	</body>
+</html>
