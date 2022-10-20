@@ -1,0 +1,101 @@
+<nav
+	class="navbar navbar-light navbar-expand-lg sticky-top shadow-lg"
+	style="background-color: #af4f01"
+>
+	<div class="container-fluid">
+		<button
+			class="navbar-toggler"
+			type="button"
+			data-bs-toggle="collapse"
+			data-bs-target="#navbarText"
+			aria-controls="navbarText"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
+		>
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+				<li class="nav-item">
+					<a class="nav-link" style="font-weight: bold; color: #f6f6e9" href="/"
+						>Home</a
+					>
+				</li>
+
+				<a
+					class="nav-link dropdown-toggle"
+					href="#"
+					id="navbarDropdown"
+					role="button"
+					data-bs-toggle="dropdown"
+					aria-expanded="false"
+					style="font-weight: bold; color: #f6f6e9"
+				>
+					Menu
+				</a>
+				<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<li>
+						<a class="dropdown-item dropdown-item-color" href="/pudding"
+							>Pudding</a
+						>
+					</li>
+					<li>
+						<a class="dropdown-item dropdown-item-color" href="/cake">Cake</a>
+					</li>
+					<li>
+						<a class="dropdown-item dropdown-item-color" href="/fried_food"
+							>Fried Food</a
+						>
+					</li>
+				</ul>
+
+				<!-- 是否顯示login -->
+				<% if (!user) { %>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						style="font-weight: bold; color: #f6f6e9"
+						href="/auth/login"
+						>Login</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						style="font-weight: bold; color: #f6f6e9"
+						href="/auth/signup"
+						>Sign Up</a
+					>
+				</li>
+
+				<!-- 是否顯示logout和profile -->
+				<% } %> <% if (user) { %>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						style="font-weight: bold; color: #f6f6e9"
+						href="/auth/logout"
+						>Logout</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						style="font-weight: bold; color: #f6f6e9"
+						href="/profile"
+						>Profile</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						class="nav-link"
+						style="font-weight: bold; color: #f6f6e9"
+						href="/profile/post"
+						>New Post</a
+					>
+				</li>
+				<% } %>
+			</ul>
+		</div>
+	</div>
+</nav>
